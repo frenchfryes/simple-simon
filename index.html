@@ -1,10 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Stuttering Stanley</title>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
 </head>
+
 <body>
+<div id="gameBoard">
+    <div id="middleCircle">
+        <h1 id="title">Stuttering Stanley</h1>
+        <p>Click on circle to Start Game</p>
+        <h2 id="level">Level : 0</h2>
+
+    </div>
+    <div class="square one" id="1" onclick='responsiveVoice.speak("Weston", "UK English Male");'>
+        <h2>Weston</h2>
+    </div>
+    <div class="square two" id="2" onclick='responsiveVoice.speak("Bryson", "UK English Male");'>
+        <h2>
+            Bryson
+        </h2>
+    </div>
+    <div class="square three" id="3" onclick='responsiveVoice.speak("Uncle D", "UK English Male");'>
+        <h2 style="padding-top: 50%">Uncle D</h2>
+    </div>
+    <div class="square four" id="4" onclick='responsiveVoice.speak("Grandma", "UK English Male");'>
+        <h2 style="padding-top: 50%         ">
+            Grandma
+        </h2>
+    </div>
+</div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script src="js/stanley.js"></script>
+
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 
 </body>
-</html>
+</html></html>
